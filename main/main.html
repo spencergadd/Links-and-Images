@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main Page</title>
+
+		<!--Favicon Link-->
+		<link rel="icon" href="image/favicon.ico" />
+
+		<style>
+			picture img {
+				width: 100%;
+			}
+
+			.hero-image {
+				background-image: linear-gradient(
+					rgba(17, 190, 104, 0.5),
+					rgba(0, 0, 0, 0.5)
+				);
+				height: 50%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+			}
+
+			.hero-text {
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+				font-size: 50px;
+				margin-bottom: auto;
+				margin-top: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="about/index.html">About</a></li>
+					<li><a href="form/index.html">Form</a></li>
+					<li><a href="https://www.google.com/">Google</a></li>
+				</ul>
+			</nav>
+		</header>
+		<img src="images/IMG-1025.jpg" alt="A Lady Hiking" width="600" />
+
+		<div>
+			<p><strong>Check out the inline SVG icon below</strong></p>
+			<svg width="400" height="180">
+				<rect
+					x="50"
+					y="20"
+					rx="20"
+					ry="20"
+					width="150"
+					height="150"
+					style="
+						fill: rgb(0, 255, 13);
+						stroke: rgb(19, 10, 148);
+						stroke-width: 10;
+						opacity: 0.6;
+					"
+				/>
+			</svg>
+		</div>
+
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1>Hero Image</h1>
+			</div>
+			<picture>
+				<img
+					src="images/IMG-0996.jpg"
+					alt="Nature"
+					srcset="
+						images/IMG-1021.jpg 2x,
+						images/IMG-1026.jpg 3x,
+						images/IMG-1029.jpg 4x
+					"
+					onerror="this.onerror=null;this.src='images/IMG-1033.jpg';"
+				/>
+			</picture>
+		</div>
+	</body>
+</html>
